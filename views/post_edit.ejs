@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>文章</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <form method="post" action="/post/edit/<%- post.id %>">
+        标题：
+        <input type="text" name="title" value="<%- post.title %>" /><br />
+        正文：<br />
+        <textarea name="content" rows="20" cols="100"><%- post.content %></textarea><br />
+        <input type="submit" value="发表" />
+      </form>
+    </div>
+  </body>
+</html>
